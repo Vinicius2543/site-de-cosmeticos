@@ -1,0 +1,161 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: #f15f79;
+
+    text-align: center;
+    z-index: 98;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.navbar-logo {
+    font-size: 24px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-menu li a:hover {
+    background-color: #f5f5f5;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+}
+
+/* Estilos do conteúdo principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 28vh;
+}
+
+h2 {
+    font-size: 35px !important;
+    font-weight: 600;
+    color: #f15f79;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Estilos dos botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f15f79;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d74a60;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos do menu de navegação responsivo */
+.menu-toggle-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    @media (max-width: 768px) {
+        .navbar-menu {
+            display: none;
+
+        }
+
+        .navbar-menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 10vh;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .navbar-menu li {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .navbar-menu li a {
+            display: block;
+            padding: 10px;
+            color: #333;
+        }
+
+        .navbar-toggle {
+            display: block;
+        }
+    }
+    
+
+}
